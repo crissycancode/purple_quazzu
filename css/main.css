@@ -48,3 +48,25 @@
 .section-podcast a{
   margin-top: 30px;
 }
+
+/* Solutions Page */
+.main-header-inner{
+  background-image: url(../img/background.jpg);
+  min-height: 300px;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-header-inner .showcase{
+  padding-top: 50px;
+}
+
+.tabs .indicator{
+  background: purple;
+}
+/* Sign Up Page */
+.btn-extend{
+  display: block;
+  width: 100%;
+}

@@ -22,14 +22,14 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Quazzu</a>
-          <a href="#" class="button-collapse">
+          <a href="#" class="button-collapse" data-activates="mobile-nav">
             <i class="fa fa-bars"></i>
           </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="active-link">Home</a></li>
-            <li><a href="solution.html">Solution</a></li>
+            <li><a href="solutions.html">Solution</a></li>
             <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="login.html" class="btn purple">Login</a></li>
+            <li><a href="#login-modal" class="btn purple modal-trigger">Login</a></li>
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -42,27 +42,26 @@
             </li>
             <li>
               <a href="index.html">
-                <i class="fa fa-home grey-text text-darken-4">home</i>
+                <i class="fa fa-home grey-text text-darken-4"></i> Home
               </a>
             </li>
             <li>
-              <a href="solution.html">
-                <i class="fa fa-home grey-text text-darken-4">solution</i>
+              <a href="solutions.html">
+                <i class="fa fa-cog grey-text text-darken-4"></i> Solutions
               </a>
             </li>
             <li>
               <a href="signup.html">
-                <i class="fa fa-home grey-text text-darken-4">sign up</i>
+                <i class="fa fa-users grey-text text-darken-4"></i> Sign Up
               </a>
             </li>
             <li>
               <div class="divider"></div>
             </li>
             <li>
-              <button class="purple">login</button>
+              <a class="btn purple">login</a>
             </li>
           </ul>
-          
         </div>
       </div>
     </nav> 
@@ -178,27 +177,78 @@
             <div class="carousel-item" href="#one">
               <h2>Testimonials 1</h2>
               <p class="flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <em>Necessitatibus voluptas natus dolore rerum eligendi, aperiam dolores velit nesciunt distinctio dicta?</em></p>
-              <div class="carousel-fixed-item center hide-on-small-and-down"><a href="#" class="btn grey">Read More</a></div>
+              <div class="carousel-fixed-item center"><a href="#" class="btn grey">Read More</a></div>
             </div>
             <div class="carousel-item" href="#two">
               <h2>Testimonials 2</h2>
               <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero sed cum. Provident veritatis soluta tempora sit, similique corrupti nisi.</em></p>
-              <div class="carousel-fixed-item center hide-on-small-and-down"><a href="#" class="btn grey">Read More</a></div>
+              <div class="carousel-fixed-item center"><a href="#" class="btn grey">Read More</a></div>
             </div>
             <div class="carousel-item" href="#three">
               <h2>Testimonials 3</h2>
               <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, odio reiciendis odit reprehenderit ipsa ullam quidem error veritatis deleniti quia repudiandae doloremque officia numquam quae id recusandae, molestiae autem voluptate.</p>
+              <div class="carousel-fixed-item center"><a href="#" class="btn grey">Read More</a></div>
             </div>
             <div class="carousel-item" href="#four">
               <h2>Testimonials 4</h2>
               <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure sunt quos nostrum commodi rerum laboriosam nulla expedita neque sint officiis soluta, autem corrupti consectetur obcaecati, reiciendis voluptate animi. Modi, tempore ipsa? <em>Consequatur enim, perferendis suscipit corporis corrupti exercitationem voluptatem.</em></p>
-              <div class="carousel-fixed-item center hide-on-small-and-down"><a href="#" class="btn grey">Read More</a></div>
+              <div class="carousel-fixed-item center"><a href="#" class="btn grey">Read More</a></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="page-footer deep-purple lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quidem minus mollitia modi praesentium consectetur quo exercitationem, amet aliquam dolores?</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5>links</h5>
+          <ul>
+            <li><a href="index.html" class="grey-text text-lighten-3">home</a></li>
+            <li><a href="solutions.html" class="grey-text text-lighten-3">solutions</a></li>
+            <li><a href="signup.html" class="grey-text text-lighten-3">sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright deep-purple darken-1">
+      <div class="container">Qazzu &copy; 2020
+        <a href="#" class="grey-text text-lighten-4 right">Terms and Consitions</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Login Modal -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <p>Login to access your account dashboard.</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="">email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="">password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="" class="btn grey model-action modal-cose">
+        <i class="fa fa-sync"></i>   Reset Password
+      </a>
+      <a href="" class="btn purple model-action modal-cose">
+        <i class="fa fa-lock"></i>   Login
+      </a>
+    </div>
+  </div>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -209,9 +259,10 @@
         fullWidth: true
       });
 
+      $('.button-collapse').sideNav();
 
-
-      // $('.button-collapse').sideNav();
+      $('.modal').modal();
+      
 
     });
   </script>
